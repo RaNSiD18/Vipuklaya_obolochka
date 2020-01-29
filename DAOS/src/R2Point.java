@@ -25,7 +25,9 @@ public class R2Point {
             if(b.y<0)
                 return Math.sqrt((b.x-(b.x-b.y*(b.x-a.x)/(b.y+a.y)))*(b.x-(b.x-b.y*(b.x-a.x)/(b.y+a.y)))+(b.y-0)*(b.y-0));
         }
+        if (a.y>=0 && b.y>=0 || b.y>=0 && a.y>=0)
         return Math.sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+        return 0;
     }
 
     public static double area(R2Point a, R2Point b, R2Point c) {

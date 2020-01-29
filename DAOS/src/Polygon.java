@@ -60,6 +60,7 @@ public class Polygon extends Deq implements Figure {
         firstPoint = front();
         secondPoint = back();
         for(int i=length(); i>=0; i--){
+
             g.drawLine(firstPoint.get_x(), firstPoint.get_y(), secondPoint.get_x(), secondPoint.get_y());
             pushBack(firstPoint);
             firstPoint=secondPoint;

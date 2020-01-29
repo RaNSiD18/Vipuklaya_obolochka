@@ -10,6 +10,7 @@ public class Segment implements Figure {
     }
 
     public double perimeter() {
+
         return 2.0 * R2Point.dist(p, q);
     }
 
